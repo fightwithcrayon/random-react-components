@@ -1,44 +1,16 @@
 {
-  "name": "vscode-react-component-generator",
-  "displayName": "VSCode React Component Generator",
+  "name": "random-react-components",
+  "displayName": "Random React Components",
   "description": "Generates React component files automatically",
-  "version": "0.0.3",
-  "publisher": "abdullahceylan",
+  "version": "0.0.2",
+  "publisher": "andrewhill",
   "author": {
-    "name": "Abdullah Ceylan",
-    "email": "ben@abdullahceylan.com"
-  },
-  "homepage": "https://github.com/abdullahceylan/vscode-react-component-generator",
-  "galleryBanner": {
-    "color": "#0273D4",
-    "theme": "dark"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/abdullahceylan/vscode-react-component-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/abdullahceylan/vscode-react-component-generator/issues",
-    "email": "ben@abdullahceylan.com"
+    "name": "Andrew Hill"
   },
   "license": "MIT",
   "engines": {
     "vscode": "^1.29.0"
   },
-  "categories": [
-    "Programming Languages",
-    "Snippets",
-    "Other"
-  ],
-  "keywords": [
-    "vscode-react",
-    "react",
-    "react component",
-    "react generate component",
-    "redux",
-    "stateless",
-    "typescript"
-  ],
   "activationEvents": [
     "onCommand:extension.genReactContainerComponentFiles",
     "onCommand:extension.genReactStatelessComponentFiles",
@@ -46,24 +18,7 @@
     "onCommand:extension.genReactReduxStatelessComponentFiles"
   ],
   "main": "./out/src/extension",
-  "icon": "assets/images/icon.png",
   "contributes": {
-    "configuration": {
-      "type": "object",
-      "title": "AC React Component Generator",
-      "properties": {
-        "ACReactComponentGenerator.mainFile.create": {
-          "type": "boolean",
-          "default": true,
-          "description": "Whether to generate component's main file or not. e.g.: ComponentName.(extension)"
-        },
-        "ACReactComponentGenerator.mainFile.extension": {
-          "type": "string",
-          "default": "jsx",
-          "description": "The extension of generated component file"
-        }
-      }
-    },
     "commands": [
       {
         "command": "extension.genReactContainerComponentFiles",

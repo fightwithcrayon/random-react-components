@@ -1,6 +1,6 @@
 import './{componentName}.scss';
-import PropTypes from {quotes}prop-types{quotes};
-import React from {quotes}react{quotes};
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const {componentName} = (props) => {
   return ();

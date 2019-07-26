@@ -1,8 +1,8 @@
 import './{componentName}.scss';
 import { bindActionCreators } from 'redux';
-import { connect } from {quotes}react-redux{quotes};
-import PropTypes from {quotes}prop-types{quotes};
-import React from {quotes}react{quotes};
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 class {componentName} extends PureComponent {
   static propTypes = {};
