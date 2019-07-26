@@ -1,31 +1,25 @@
-import React from {quotes}react{quotes};
-import PropTypes from {quotes}prop-types{quotes};
+import './{componentName}.scss';
+import { bindActionCreators } from 'redux';
 import { connect } from {quotes}react-redux{quotes};
-//import { Test } from './{componentName}.styles';
+import PropTypes from {quotes}prop-types{quotes};
+import React from {quotes}react{quotes};
 
-const {componentName} = (props) => (
-  <div className="{componentName}Wrapper">
-    Test content
-  </div>
-);
+const {componentName} = (props) => {
+  return ();
+}
 
 {componentName}.propTypes = {
-  // bla: PropTypes.string,
 };
 
 {componentName}.defaultProps = {
-  // bla: 'test',
 };
 
 const mapStateToProps = state => ({
-  // blabla: state.blabla,
 });
 
 const mapDispatchToProps = dispatch => ({
-  // fnBlaBla: () => dispatch(action.name()),
+	actions: bindActionCreators({
+	}, dispatch),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)({componentName});
+export default connect(mapStateToProps, mapDispatchToProps)({componentName});
